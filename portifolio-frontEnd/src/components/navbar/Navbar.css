@@ -1,0 +1,68 @@
+.navbar {
+    
+    width: 100%;
+    height: 50px;
+background: #eaeaeaf9;
+    position: fixed;
+    top: 0;
+    left: 0;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;  /* centraliza a lista */
+    align-items: center;
+    padding: 0 20px;
+     box-shadow: 10px 0px 10px 0px  #e3e2e2;
+    border-radius: 6px;
+}
+
+/* Lista centralizada */
+.navbar .links {
+    margin-left: 100px;
+color: #1c1c1d;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+    padding: 0;
+}
+
+/* Itens da lista */
+.navbar .links li {
+    font-weight: 600;
+
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.navbar .links li:hover {
+    font-weight: bold;
+    font-size:15px ;/* deixa o texto mais grosso */
+    color: #121111;         /* cor mais clara, ajuste conforme desejar */
+    transition: all 0.2s;   /* transição suave */
+}
+
+.navbar .links li i {
+    margin-right: 6px;
+}
+
+
+
+.cart-btn:hover i {
+    color: #105a75;
+}
+/* Azul para itens específicos */
+.text-blue-500 {
+    color: #0d1b4a;
+}
+.logo {
+    margin-left: 40px;
+    font-family: cursive;
+    font-weight: 900;
+    position: absolute;
+    left: 100px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #054e9c; /* azul, pode trocar */
+}
