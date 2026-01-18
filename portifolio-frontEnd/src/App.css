@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+/* Esconde scroll horizontal em todos os navegadores */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE e Edge antigo */
+  scrollbar-width: none;     /* Firefox */
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

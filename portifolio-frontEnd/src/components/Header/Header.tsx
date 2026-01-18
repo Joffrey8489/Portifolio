@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 
 import img1 from "../../assets/dsc.jpg";
 import img3 from "../../assets/eu_na_school.png";
-import secure3 from "../../assets/secureChat_login.png";
 import Carousel from "../Carousel/Carousel";
 
 export default function Header() {
-  const images = [img1, img3, secure3];
+  const images = [img1, img3];
 
   const [index, setIndex] = useState(0);
 
