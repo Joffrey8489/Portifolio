@@ -29,7 +29,7 @@ const Curriculum: React.FC = () => {
                 target="_blank"
                 className="underline"
               >
-                linkedin.com/in/jofrey-lourenco-sewane
+              www.linkedin.com/in/jofrey-lourenco-sewane-3559a6325
               </a>
             </p>
           </div>

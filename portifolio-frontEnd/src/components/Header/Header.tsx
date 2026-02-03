@@ -67,7 +67,7 @@ export default function Header() {
           transition={{ delay: 0.7, duration: 1.8 }}
           className="mt-2 text-lg text-center text-red-900 opacity-90"
         >
-          Devloper
+         FullStack Devloper
         </motion.p>
 
         <motion.div

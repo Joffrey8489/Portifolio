@@ -35,7 +35,7 @@ function Works() {
       title: "Entertainment Website Template",
       description: "A complete frontend template with many functionalities of a web app for a website for entertainment and streaming",
       image: central_animes,
-      technologies: [, "html", "css", "javascript"],
+      technologies: ["html", "css", "javascript"],
       github: ""
     },
     {
@@ -48,7 +48,7 @@ function Works() {
     }
   ];
 
-  const techIcons = {
+  const techIcons: Record<string, string> = {
     react: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     angular: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
     spring: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
@@ -82,7 +82,7 @@ function Works() {
             </h1>
             <p className="text-gray-900 text-lg max-w-2xl mx-auto">
             Projects developed with the latest technologies and best development practices.
-            </p>
+            </p>  
           </div>
 
           {/* Projects Grid */}
@@ -116,28 +116,37 @@ function Works() {
 
                   {/* Technologies */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wider">
-                  Tecnologies Used
-                    </h4>
-                    <div className="flex flex-wrap gap-3">
-                      {project.technologies.map((tech) => (
-                        <div 
-                          key={tech} 
-                          className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors"
-                          title={tech.charAt(0).toUpperCase() + tech.slice(1)}
-                        >
-                          <img 
-                            src={techIcons[tech]} 
-                            alt={tech}
-                            className="w-5 h-5"
-                          />
-                          <span className="text-sm font-medium text-gray-700">
-                            {tech.charAt(0).toUpperCase() + tech.slice(1)}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+  <h4 className="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wider">
+    Technologies Used
+  </h4>
+
+  <div className="flex flex-wrap gap-3">
+    {project.technologies
+      ?.filter((tech): tech is string => !!tech)
+      .map((tech) => {
+        const label = tech.charAt(0).toUpperCase() + tech.slice(1)
+
+        return (
+          <div
+            key={tech}
+            className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors"
+            title={label}
+          >
+            <img
+              src={techIcons[tech]}
+              alt={tech}
+              className="w-5 h-5"
+            />
+
+            <span className="text-sm font-medium text-gray-700">
+              {label}
+            </span>
+          </div>
+        )
+      })}
+  </div>
+</div>
+
 
                   {/* GitHub Link */}
                   <div className="border-t pt-4">
