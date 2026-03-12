@@ -3,6 +3,8 @@ import event_hub from "../../assets/event_hub.jpg";
 import src from "../../assets/src.png";
 import secure_chat from "../../assets/secure_chat.png";
 import central_animes from "../../assets/central_animes.png";
+import taskManager from "../../assets/taskManager.png"
+import dragon from"../../assets/dragon.png"
 function Works() {
   const projects = [
     {
@@ -41,9 +43,17 @@ function Works() {
     {
       id: 5,
       title: "Task Manager ",
-      description: "Plataforma imobiliária com busca avançada, galeria de fotos e sistema de agendamentos.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800",
-      technologies: ["angular", "typescript","html","css", "github"],
+      description: "A Scalable task manager app with an intuitive interface, thar don't use heavy backend",
+      image: taskManager,
+      technologies: ["angular", "typescript","html","css", "github","tailwind"],
+      github: ""
+    },
+    {
+      id: 6,
+      title: "Dragon Next ",
+      description: "An react Next app, with data consumption based on an external API that implements framework basics!!!!",
+      image:dragon,
+      technologies: ["typescript","html","css", "github","tailwind","react","nextjs"],
       github: ""
     }
   ];
@@ -65,6 +75,7 @@ function Works() {
     tailwind: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     github: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     thymeleaf: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thymeleaf/thymeleaf-original.svg",
+    nextjs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
 
   };
 

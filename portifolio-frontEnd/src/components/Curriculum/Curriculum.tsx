@@ -68,7 +68,7 @@ const Curriculum: React.FC = () => {
                 <span className="text-sm">2022 – 2025</span>
               </div>
               <p className="text-sm ">Universidade Joaquim Chissano — Maputo</p>
-              <p className="text-sm text-gray-500 mt-1">
+              <p className="text-sm text-gray-700 mt-1">
            
               Specialized in Software Engineering, he possesses solid knowledge in application development,
                systems analysis, and agile methodologies, with an interest in creating innovative 
@@ -143,13 +143,21 @@ const Curriculum: React.FC = () => {
               Courses
             </h2>
 
-            <p className="font-medium ">Web Development (Freelancing)</p>
-            <p className="text-sm  mb-2">
-            Front-end, back-end, databases, and modern frameworks.
-            </p>
+            <p className="font-medium text-blue-800">Web Development</p>
+<p className="mb-2 text-sm">
+Front-end, back-end, databases, and modern frameworks.
+</p>
 
-            <p className="font-medium " >Angular with TypeScript (Udemy)</p>
-   
+<p className="font-medium text-blue-800">Angular with TypeScript (Udemy)</p>
+<p className="mb-2 text-sm">
+Building dynamic single-page applications using Angular, TypeScript, components, services, and modern front-end architecture.
+</p>
+
+<p className="font-medium py-2 text-blue-800">Microsoft Office Package</p>
+<p className="mb-2 text-sm">
+Productivity tools including Word, Excel, PowerPoint, and Outlook for document creation, data analysis, presentations, and communication.
+</p>
+
           </section>
         </main>
       </div>

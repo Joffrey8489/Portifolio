@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Email */}
             <a
-              href="mailto:jofreylourenco@gmail.com"
+              href="mailto:jofreylourenco50@gmail.com"
               className="group bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
             >
               <i className="fa-solid fa-envelope text-3xl text-blue-700 mb-4 group-hover:scale-110 transition"></i>
